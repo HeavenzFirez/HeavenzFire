@@ -1,0 +1,5 @@
+{
+    "model_path": "model.h5",
+    "db_path": "harmonia.db",
+    "kg_path": "knowledge_graph.gpickle"
+}

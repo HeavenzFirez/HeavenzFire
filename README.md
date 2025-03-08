@@ -1,3 +1,40 @@
+import numpy as np
+
+def calculate_time_dilation(factor):
+    """
+    Calculate time dilation factor.
+
+    Args:
+        factor (float): Time dilation factor. Must be greater than 0.
+
+    Returns:
+        float: Validated time dilation factor.
+
+    Raises:
+        ValueError: If the factor is not greater than 0.
+    """
+    if factor <= 0:
+        raise ValueError("Time dilation factor must be greater than 0.")
+    return factor
+
+def apply_time_dilation(data, time_dilation_factor):
+    """
+    Apply time dilation to data.
+
+    Args:
+        data (list or np.ndarray): Input data.
+        time_dilation_factor (float): Time dilation factor.
+
+    Returns:
+        np.ndarray: Time-dilated data.
+
+    Example:
+        >>> data = [1, 2, 3]
+        >>> apply_time_dilation(data, 1.5)
+        array([1.5, 3. , 4.5])
+    """
+    data = np.array(data)
+    return data * time_dilation_factor
 **Universal Resonance Technology Implementation Framework - Optimized & Enhanced**  
 **(2025-03-07 System Ready for Phase One Activation)**  
 
